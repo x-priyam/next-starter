@@ -12,7 +12,10 @@ This is a starter template to initialize a new [Next.js](https://nextjs.org/) pr
 
 Additional packages/modules added to the starter-kit:
 
-- - [typescript-eslint]
+- [typescript-eslint]
+- [prettier]
+- [eslint-config-prettier]
+- [prettier-plugin-tailwindcss]
 
 <!-- Links for packages/modules -->
 
@@ -23,6 +26,15 @@ Additional packages/modules added to the starter-kit:
 [eslint]: https://github.com/eslint/eslint
 [eslint-config-next]: https://nextjs.org/docs/app/building-your-application/configuring/eslint#eslint-config
 [typescript-eslint]: https://github.com/typescript-eslint/typescript-eslint
+[prettier]: https://github.com/prettier/prettier
+[eslint-config-prettier]: https://github.com/prettier/eslint-config-prettier
+[prettier-plugin-tailwindcss]: https://github.com/tailwindlabs/prettier-plugin-tailwindcss
+
+## Using The Template
+
+From the command-line run:
+
+`npx create-next-app --example https://github.com/x-priyam/next-starter`
 
 ## Getting the Project Started
 

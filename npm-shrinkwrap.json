@@ -21,7 +21,10 @@
         "autoprefixer": "^10.0.1",
         "eslint": "^8.53.0",
         "eslint-config-next": "14.0.2",
+        "eslint-config-prettier": "^9.0.0",
         "postcss": "^8",
+        "prettier": "^3.1.0",
+        "prettier-plugin-tailwindcss": "^0.5.7",
         "tailwindcss": "^3.3.0",
         "typescript": "^5.2.2"
       }
@@ -214,13 +217,9 @@
       "version": "14.0.2",
       "resolved": "https://registry.npmjs.org/@next/swc-darwin-arm64/-/swc-darwin-arm64-14.0.2.tgz",
       "integrity": "sha512-i+jQY0fOb8L5gvGvojWyZMfQoQtDVB2kYe7fufOEiST6sicvzI2W5/EXo4lX5bLUjapHKe+nFxuVv7BA+Pd7LQ==",
-      "cpu": [
-        "arm64"
-      ],
+      "cpu": ["arm64"],
       "optional": true,
-      "os": [
-        "darwin"
-      ],
+      "os": ["darwin"],
       "engines": {
         "node": ">= 10"
       }
@@ -229,13 +228,9 @@
       "version": "14.0.2",
       "resolved": "https://registry.npmjs.org/@next/swc-darwin-x64/-/swc-darwin-x64-14.0.2.tgz",
       "integrity": "sha512-zRCAO0d2hW6gBEa4wJaLn+gY8qtIqD3gYd9NjruuN98OCI6YyelmhWVVLlREjS7RYrm9OUQIp/iVJFeB6kP1hg==",
-      "cpu": [
-        "x64"
-      ],
+      "cpu": ["x64"],
       "optional": true,
-      "os": [
-        "darwin"
-      ],
+      "os": ["darwin"],
       "engines": {
         "node": ">= 10"
       }
@@ -244,13 +239,9 @@
       "version": "14.0.2",
       "resolved": "https://registry.npmjs.org/@next/swc-linux-arm64-gnu/-/swc-linux-arm64-gnu-14.0.2.tgz",
       "integrity": "sha512-tSJmiaon8YaKsVhi7GgRizZoV0N1Sx5+i+hFTrCKKQN7s3tuqW0Rov+RYdPhAv/pJl4qiG+XfSX4eJXqpNg3dA==",
-      "cpu": [
-        "arm64"
-      ],
+      "cpu": ["arm64"],
       "optional": true,
-      "os": [
-        "linux"
-      ],
+      "os": ["linux"],
       "engines": {
         "node": ">= 10"
       }
@@ -259,13 +250,9 @@
       "version": "14.0.2",
       "resolved": "https://registry.npmjs.org/@next/swc-linux-arm64-musl/-/swc-linux-arm64-musl-14.0.2.tgz",
       "integrity": "sha512-dXJLMSEOwqJKcag1BeX1C+ekdPPJ9yXbWIt3nAadhbLx5CjACoB2NQj9Xcqu2tmdr5L6m34fR+fjGPs+ZVPLzA==",
-      "cpu": [
-        "arm64"
-      ],
+      "cpu": ["arm64"],
       "optional": true,
-      "os": [
-        "linux"
-      ],
+      "os": ["linux"],
       "engines": {
         "node": ">= 10"
       }
@@ -274,13 +261,9 @@
       "version": "14.0.2",
       "resolved": "https://registry.npmjs.org/@next/swc-linux-x64-gnu/-/swc-linux-x64-gnu-14.0.2.tgz",
       "integrity": "sha512-WC9KAPSowj6as76P3vf1J3mf2QTm3Wv3FBzQi7UJ+dxWjK3MhHVWsWUo24AnmHx9qDcEtHM58okgZkXVqeLB+Q==",
-      "cpu": [
-        "x64"
-      ],
+      "cpu": ["x64"],
       "optional": true,
-      "os": [
-        "linux"
-      ],
+      "os": ["linux"],
       "engines": {
         "node": ">= 10"
       }
@@ -289,13 +272,9 @@
       "version": "14.0.2",
       "resolved": "https://registry.npmjs.org/@next/swc-linux-x64-musl/-/swc-linux-x64-musl-14.0.2.tgz",
       "integrity": "sha512-KSSAwvUcjtdZY4zJFa2f5VNJIwuEVnOSlqYqbQIawREJA+gUI6egeiRu290pXioQXnQHYYdXmnVNZ4M+VMB7KQ==",
-      "cpu": [
-        "x64"
-      ],
+      "cpu": ["x64"],
       "optional": true,
-      "os": [
-        "linux"
-      ],
+      "os": ["linux"],
       "engines": {
         "node": ">= 10"
       }
@@ -304,13 +283,9 @@
       "version": "14.0.2",
       "resolved": "https://registry.npmjs.org/@next/swc-win32-arm64-msvc/-/swc-win32-arm64-msvc-14.0.2.tgz",
       "integrity": "sha512-2/O0F1SqJ0bD3zqNuYge0ok7OEWCQwk55RPheDYD0va5ij7kYwrFkq5ycCRN0TLjLfxSF6xI5NM6nC5ux7svEQ==",
-      "cpu": [
-        "arm64"
-      ],
+      "cpu": ["arm64"],
       "optional": true,
-      "os": [
-        "win32"
-      ],
+      "os": ["win32"],
       "engines": {
         "node": ">= 10"
       }
@@ -319,13 +294,9 @@
       "version": "14.0.2",
       "resolved": "https://registry.npmjs.org/@next/swc-win32-ia32-msvc/-/swc-win32-ia32-msvc-14.0.2.tgz",
       "integrity": "sha512-vJI/x70Id0oN4Bq/R6byBqV1/NS5Dl31zC+lowO8SDu1fHmUxoAdILZR5X/sKbiJpuvKcCrwbYgJU8FF/Gh50Q==",
-      "cpu": [
-        "ia32"
-      ],
+      "cpu": ["ia32"],
       "optional": true,
-      "os": [
-        "win32"
-      ],
+      "os": ["win32"],
       "engines": {
         "node": ">= 10"
       }
@@ -334,13 +305,9 @@
       "version": "14.0.2",
       "resolved": "https://registry.npmjs.org/@next/swc-win32-x64-msvc/-/swc-win32-x64-msvc-14.0.2.tgz",
       "integrity": "sha512-Ut4LXIUvC5m8pHTe2j0vq/YDnTEyq6RSR9vHYPqnELrDapPhLNz9Od/L5Ow3J8RNDWpEnfCiQXuVdfjlNEJ7ug==",
-      "cpu": [
-        "x64"
-      ],
+      "cpu": ["x64"],
       "optional": true,
-      "os": [
-        "win32"
-      ],
+      "os": ["win32"],
       "engines": {
         "node": ">= 10"
       }
@@ -1564,6 +1531,18 @@
         }
       }
     },
+    "node_modules/eslint-config-prettier": {
+      "version": "9.0.0",
+      "resolved": "https://registry.npmjs.org/eslint-config-prettier/-/eslint-config-prettier-9.0.0.tgz",
+      "integrity": "sha512-IcJsTkJae2S35pRsRAwoCE+925rJJStOdkKnLVgtE+tEpqU0EVVM7OqrwxqgptKdX29NUwC82I5pXsGFIgSevw==",
+      "dev": true,
+      "bin": {
+        "eslint-config-prettier": "bin/cli.js"
+      },
+      "peerDependencies": {
+        "eslint": ">=7.0.0"
+      }
+    },
     "node_modules/eslint-import-resolver-node": {
       "version": "0.3.9",
       "resolved": "https://registry.npmjs.org/eslint-import-resolver-node/-/eslint-import-resolver-node-0.3.9.tgz",
@@ -2043,9 +2022,7 @@
       "dev": true,
       "hasInstallScript": true,
       "optional": true,
-      "os": [
-        "darwin"
-      ],
+      "os": ["darwin"],
       "engines": {
         "node": "^8.16.0 || ^10.6.0 || >=11.0.0"
       }
@@ -3466,6 +3443,93 @@
       "dev": true,
       "engines": {
         "node": ">= 0.8.0"
+      }
+    },
+    "node_modules/prettier": {
+      "version": "3.1.0",
+      "resolved": "https://registry.npmjs.org/prettier/-/prettier-3.1.0.tgz",
+      "integrity": "sha512-TQLvXjq5IAibjh8EpBIkNKxO749UEWABoiIZehEPiY4GNpVdhaFKqSTu+QrlU6D2dPAfubRmtJTi4K4YkQ5eXw==",
+      "dev": true,
+      "bin": {
+        "prettier": "bin/prettier.cjs"
+      },
+      "engines": {
+        "node": ">=14"
+      },
+      "funding": {
+        "url": "https://github.com/prettier/prettier?sponsor=1"
+      }
+    },
+    "node_modules/prettier-plugin-tailwindcss": {
+      "version": "0.5.7",
+      "resolved": "https://registry.npmjs.org/prettier-plugin-tailwindcss/-/prettier-plugin-tailwindcss-0.5.7.tgz",
+      "integrity": "sha512-4v6uESAgwCni6YF6DwJlRaDjg9Z+al5zM4JfngcazMy4WEf/XkPS5TEQjbD+DZ5iNuG6RrKQLa/HuX2SYzC3kQ==",
+      "dev": true,
+      "engines": {
+        "node": ">=14.21.3"
+      },
+      "peerDependencies": {
+        "@ianvs/prettier-plugin-sort-imports": "*",
+        "@prettier/plugin-pug": "*",
+        "@shopify/prettier-plugin-liquid": "*",
+        "@shufo/prettier-plugin-blade": "*",
+        "@trivago/prettier-plugin-sort-imports": "*",
+        "prettier": "^3.0",
+        "prettier-plugin-astro": "*",
+        "prettier-plugin-css-order": "*",
+        "prettier-plugin-import-sort": "*",
+        "prettier-plugin-jsdoc": "*",
+        "prettier-plugin-organize-attributes": "*",
+        "prettier-plugin-organize-imports": "*",
+        "prettier-plugin-style-order": "*",
+        "prettier-plugin-svelte": "*"
+      },
+      "peerDependenciesMeta": {
+        "@ianvs/prettier-plugin-sort-imports": {
+          "optional": true
+        },
+        "@prettier/plugin-pug": {
+          "optional": true
+        },
+        "@shopify/prettier-plugin-liquid": {
+          "optional": true
+        },
+        "@shufo/prettier-plugin-blade": {
+          "optional": true
+        },
+        "@trivago/prettier-plugin-sort-imports": {
+          "optional": true
+        },
+        "prettier-plugin-astro": {
+          "optional": true
+        },
+        "prettier-plugin-css-order": {
+          "optional": true
+        },
+        "prettier-plugin-import-sort": {
+          "optional": true
+        },
+        "prettier-plugin-jsdoc": {
+          "optional": true
+        },
+        "prettier-plugin-marko": {
+          "optional": true
+        },
+        "prettier-plugin-organize-attributes": {
+          "optional": true
+        },
+        "prettier-plugin-organize-imports": {
+          "optional": true
+        },
+        "prettier-plugin-style-order": {
+          "optional": true
+        },
+        "prettier-plugin-svelte": {
+          "optional": true
+        },
+        "prettier-plugin-twig-melody": {
+          "optional": true
+        }
       }
     },
     "node_modules/prop-types": {
