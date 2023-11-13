@@ -10,7 +10,8 @@
       "dependencies": {
         "next": "14.0.2",
         "react": "^18",
-        "react-dom": "^18"
+        "react-dom": "^18",
+        "zod": "^3.22.4"
       },
       "devDependencies": {
         "@types/node": "^20",
@@ -217,9 +218,13 @@
       "version": "14.0.2",
       "resolved": "https://registry.npmjs.org/@next/swc-darwin-arm64/-/swc-darwin-arm64-14.0.2.tgz",
       "integrity": "sha512-i+jQY0fOb8L5gvGvojWyZMfQoQtDVB2kYe7fufOEiST6sicvzI2W5/EXo4lX5bLUjapHKe+nFxuVv7BA+Pd7LQ==",
-      "cpu": ["arm64"],
+      "cpu": [
+        "arm64"
+      ],
       "optional": true,
-      "os": ["darwin"],
+      "os": [
+        "darwin"
+      ],
       "engines": {
         "node": ">= 10"
       }
@@ -228,9 +233,13 @@
       "version": "14.0.2",
       "resolved": "https://registry.npmjs.org/@next/swc-darwin-x64/-/swc-darwin-x64-14.0.2.tgz",
       "integrity": "sha512-zRCAO0d2hW6gBEa4wJaLn+gY8qtIqD3gYd9NjruuN98OCI6YyelmhWVVLlREjS7RYrm9OUQIp/iVJFeB6kP1hg==",
-      "cpu": ["x64"],
+      "cpu": [
+        "x64"
+      ],
       "optional": true,
-      "os": ["darwin"],
+      "os": [
+        "darwin"
+      ],
       "engines": {
         "node": ">= 10"
       }
@@ -239,9 +248,13 @@
       "version": "14.0.2",
       "resolved": "https://registry.npmjs.org/@next/swc-linux-arm64-gnu/-/swc-linux-arm64-gnu-14.0.2.tgz",
       "integrity": "sha512-tSJmiaon8YaKsVhi7GgRizZoV0N1Sx5+i+hFTrCKKQN7s3tuqW0Rov+RYdPhAv/pJl4qiG+XfSX4eJXqpNg3dA==",
-      "cpu": ["arm64"],
+      "cpu": [
+        "arm64"
+      ],
       "optional": true,
-      "os": ["linux"],
+      "os": [
+        "linux"
+      ],
       "engines": {
         "node": ">= 10"
       }
@@ -250,9 +263,13 @@
       "version": "14.0.2",
       "resolved": "https://registry.npmjs.org/@next/swc-linux-arm64-musl/-/swc-linux-arm64-musl-14.0.2.tgz",
       "integrity": "sha512-dXJLMSEOwqJKcag1BeX1C+ekdPPJ9yXbWIt3nAadhbLx5CjACoB2NQj9Xcqu2tmdr5L6m34fR+fjGPs+ZVPLzA==",
-      "cpu": ["arm64"],
+      "cpu": [
+        "arm64"
+      ],
       "optional": true,
-      "os": ["linux"],
+      "os": [
+        "linux"
+      ],
       "engines": {
         "node": ">= 10"
       }
@@ -261,9 +278,13 @@
       "version": "14.0.2",
       "resolved": "https://registry.npmjs.org/@next/swc-linux-x64-gnu/-/swc-linux-x64-gnu-14.0.2.tgz",
       "integrity": "sha512-WC9KAPSowj6as76P3vf1J3mf2QTm3Wv3FBzQi7UJ+dxWjK3MhHVWsWUo24AnmHx9qDcEtHM58okgZkXVqeLB+Q==",
-      "cpu": ["x64"],
+      "cpu": [
+        "x64"
+      ],
       "optional": true,
-      "os": ["linux"],
+      "os": [
+        "linux"
+      ],
       "engines": {
         "node": ">= 10"
       }
@@ -272,9 +293,13 @@
       "version": "14.0.2",
       "resolved": "https://registry.npmjs.org/@next/swc-linux-x64-musl/-/swc-linux-x64-musl-14.0.2.tgz",
       "integrity": "sha512-KSSAwvUcjtdZY4zJFa2f5VNJIwuEVnOSlqYqbQIawREJA+gUI6egeiRu290pXioQXnQHYYdXmnVNZ4M+VMB7KQ==",
-      "cpu": ["x64"],
+      "cpu": [
+        "x64"
+      ],
       "optional": true,
-      "os": ["linux"],
+      "os": [
+        "linux"
+      ],
       "engines": {
         "node": ">= 10"
       }
@@ -283,9 +308,13 @@
       "version": "14.0.2",
       "resolved": "https://registry.npmjs.org/@next/swc-win32-arm64-msvc/-/swc-win32-arm64-msvc-14.0.2.tgz",
       "integrity": "sha512-2/O0F1SqJ0bD3zqNuYge0ok7OEWCQwk55RPheDYD0va5ij7kYwrFkq5ycCRN0TLjLfxSF6xI5NM6nC5ux7svEQ==",
-      "cpu": ["arm64"],
+      "cpu": [
+        "arm64"
+      ],
       "optional": true,
-      "os": ["win32"],
+      "os": [
+        "win32"
+      ],
       "engines": {
         "node": ">= 10"
       }
@@ -294,9 +323,13 @@
       "version": "14.0.2",
       "resolved": "https://registry.npmjs.org/@next/swc-win32-ia32-msvc/-/swc-win32-ia32-msvc-14.0.2.tgz",
       "integrity": "sha512-vJI/x70Id0oN4Bq/R6byBqV1/NS5Dl31zC+lowO8SDu1fHmUxoAdILZR5X/sKbiJpuvKcCrwbYgJU8FF/Gh50Q==",
-      "cpu": ["ia32"],
+      "cpu": [
+        "ia32"
+      ],
       "optional": true,
-      "os": ["win32"],
+      "os": [
+        "win32"
+      ],
       "engines": {
         "node": ">= 10"
       }
@@ -305,9 +338,13 @@
       "version": "14.0.2",
       "resolved": "https://registry.npmjs.org/@next/swc-win32-x64-msvc/-/swc-win32-x64-msvc-14.0.2.tgz",
       "integrity": "sha512-Ut4LXIUvC5m8pHTe2j0vq/YDnTEyq6RSR9vHYPqnELrDapPhLNz9Od/L5Ow3J8RNDWpEnfCiQXuVdfjlNEJ7ug==",
-      "cpu": ["x64"],
+      "cpu": [
+        "x64"
+      ],
       "optional": true,
-      "os": ["win32"],
+      "os": [
+        "win32"
+      ],
       "engines": {
         "node": ">= 10"
       }
@@ -2022,7 +2059,9 @@
       "dev": true,
       "hasInstallScript": true,
       "optional": true,
-      "os": ["darwin"],
+      "os": [
+        "darwin"
+      ],
       "engines": {
         "node": "^8.16.0 || ^10.6.0 || >=11.0.0"
       }
@@ -4500,6 +4539,14 @@
       },
       "funding": {
         "url": "https://github.com/sponsors/sindresorhus"
+      }
+    },
+    "node_modules/zod": {
+      "version": "3.22.4",
+      "resolved": "https://registry.npmjs.org/zod/-/zod-3.22.4.tgz",
+      "integrity": "sha512-iC+8Io04lddc+mVqQ9AZ7OQ2MrUKGN+oIQyq1vemgt46jwCwLfhq7/pwnBnNXXXZb8VTVLKwp9EDkx+ryxIWmg==",
+      "funding": {
+        "url": "https://github.com/sponsors/colinhacks"
       }
     }
   }
