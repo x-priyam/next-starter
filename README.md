@@ -1,6 +1,25 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Next Starter
 
-## Getting Started
+This is a starter template to initialize a new [Next.js](https://nextjs.org/) project. It includes modules from [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) which include:
+
+- [next]
+- [react]
+- [react-dom][react]
+- [typescript]
+- [tailwindcss]
+- [eslint]
+- [eslint-config-next]
+
+<!-- Links for packages/modules -->
+
+[next]: https://github.com/vercel/next.js
+[react]: https://github.com/facebook/react
+[typescript]: https://github.com/microsoft/TypeScript
+[tailwindcss]: https://github.com/tailwindlabs/tailwindcss
+[eslint]: https://github.com/eslint/eslint
+[eslint-config-next]: https://nextjs.org/docs/app/building-your-application/configuring/eslint#eslint-config
+
+## Getting the Project Started
 
 First, run the development server:
 
@@ -16,7 +35,7 @@ bun dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+You can start editing the page by modifying `src/app/page.tsx` and `src/app/layout.tsx`. The page auto-updates as you edit the file.
 
 This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
@@ -27,7 +46,7 @@ To learn more about Next.js, take a look at the following resources:
 - [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
 - [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+You can check out [the Next.js GitHub repository][next] - your feedback and contributions are welcome!
 
 ## Deploy on Vercel
 
