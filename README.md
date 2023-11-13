@@ -19,6 +19,12 @@ Additional packages/modules added to the starter-kit:
 - [zod]
 - [@t3-oss/env-nextjs]
 
+Packages added which will require additional [configurations](#configuration):
+
+- [drizzle-orm][drizzle]
+- [drizzle-kit][drizzle]
+- [@libsql/client]
+
 <!-- Links for packages/modules -->
 
 [next]: https://github.com/vercel/next.js
@@ -33,6 +39,8 @@ Additional packages/modules added to the starter-kit:
 [prettier-plugin-tailwindcss]: https://github.com/tailwindlabs/prettier-plugin-tailwindcss
 [zod]: https://github.com/colinhacks/zod
 [@t3-oss/env-nextjs]: https://github.com/t3-oss/t3-env
+[drizzle]: https://orm.drizzle.team/
+[@libsql/client]: https://github.com/libsql/libsql-client-ts
 
 ## Using The Template
 
@@ -42,7 +50,40 @@ From the command-line run:
 
 ### Configuration
 
-Use the `.env.local.starter` file to setup the local environment file. One way to do so would be to rename it to `.env.local` and change the values in it according to the project. You could also have multiple files like `.env.production.local` and `.env.development.local` according to your needs _([more details](https://nextjs.org/docs/app/building-your-application/configuring/environment-variables))_. Read along to find instructions on how to do so correctly.
+#### Environment Variables
+
+Use the `.env.local.starter` file to setup the local environment file. One way to do so would be to rename it to `.env.local` and change the values in it according to the project. You could also have multiple files like `.env.production.local` and `.env.development.local` according to your needs _([more details](https://nextjs.org/docs/app/building-your-application/configuring/environment-variables))_.
+
+When adding environment variables to any `.env` file, also make changes in `src/env.mjs`. This is a module to add type-safety to environment variables using [zod] and [@t3-oss/env-nextjs].
+
+#### Database and ORM
+
+This starter kit uses [Drizzle ORM][drizzle]. Just like other tools in this starter kit, this is a personal choice.
+
+As for the database, this starter kit is setup with [Turso](https://turso.tech/), a libSQL(modified SQLite) based database provider. You can choose to another database provider very easily. Search Google for `how to setup <database-name> with Next.js and Drizzle`.
+
+The drizzle configuration file `drizzle.config.ts` is also modified according to Turso requirements in the starter-kit. Check out the [Drizzle Config References](https://orm.drizzle.team/kit-docs/config-reference) if you want to edit it.
+
+If you also choose to go with Turso, head to the [Turso Docs](https://docs.turso.tech/) to get instructions on how to setup a Turso Database or check out the [Turso Next.js Example](https://github.com/turso-extended/app-turso-nextjs-starter).
+
+To setup a basic Turso Database and connect it to the starter-kit:
+
+- Install the Turso CLI tool (for Mac/Linux/WSL on Windows)
+  - `curl -sSfL https://get.tur.so/install.sh | bash`
+- Create a new database
+  - `turso db create <database-name>`
+- Set `DATABASE_URL`
+  - `turso db show <database-name> --url`
+  - copy output and save in `.env.local` as `DATABASE_URL=<copied-value>`
+- Set `DATABASE_AUTH_TOKEN`
+  - `turso db tokens create <database-name>`
+  - copy output and save in `.env.local` as `DATABASE_AUTH_TOKEN=<copied-value>`
+
+If you end up creating any other environment variables, make sure to follow the instructions in [Configuring Environment Variables section](#environment-variables)
+
+With most databases, you need to add a `DATABASE_URL` and some other environment variables as well.
+
+The starter kit includes a basic user schema in `src/db/schema/users.ts`. Change it according to your own needs.
 
 ## Getting the Project Started
 
