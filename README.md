@@ -10,6 +10,10 @@ This is a starter template to initialize a new [Next.js](https://nextjs.org/) pr
 - [eslint]
 - [eslint-config-next]
 
+Additional packages/modules added to the starter-kit:
+
+- - [typescript-eslint]
+
 <!-- Links for packages/modules -->
 
 [next]: https://github.com/vercel/next.js
@@ -18,6 +22,7 @@ This is a starter template to initialize a new [Next.js](https://nextjs.org/) pr
 [tailwindcss]: https://github.com/tailwindlabs/tailwindcss
 [eslint]: https://github.com/eslint/eslint
 [eslint-config-next]: https://nextjs.org/docs/app/building-your-application/configuring/eslint#eslint-config
+[typescript-eslint]: https://github.com/typescript-eslint/typescript-eslint
 
 ## Getting the Project Started
 
