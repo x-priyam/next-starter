@@ -1,6 +1,6 @@
 {
   "name": "next-starter",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "private": true,
   "type": "module",
   "scripts": {
@@ -10,6 +10,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@t3-oss/env-nextjs": "^0.7.1",
     "next": "14.0.2",
     "react": "^18",
     "react-dom": "^18",

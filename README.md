@@ -16,6 +16,8 @@ Additional packages/modules added to the starter-kit:
 - [prettier]
 - [eslint-config-prettier]
 - [prettier-plugin-tailwindcss]
+- [zod]
+- [@t3-oss/env-nextjs]
 
 <!-- Links for packages/modules -->
 
@@ -29,12 +31,18 @@ Additional packages/modules added to the starter-kit:
 [prettier]: https://github.com/prettier/prettier
 [eslint-config-prettier]: https://github.com/prettier/eslint-config-prettier
 [prettier-plugin-tailwindcss]: https://github.com/tailwindlabs/prettier-plugin-tailwindcss
+[zod]: https://github.com/colinhacks/zod
+[@t3-oss/env-nextjs]: https://github.com/t3-oss/t3-env
 
 ## Using The Template
 
 From the command-line run:
 
 `npx create-next-app --example https://github.com/x-priyam/next-starter`
+
+### Configuration
+
+Use the `.env.local.starter` file to setup the local environment file. One way to do so would be to rename it to `.env.local` and change the values in it according to the project. You could also have multiple files like `.env.production.local` and `.env.development.local` according to your needs _([more details](https://nextjs.org/docs/app/building-your-application/configuring/environment-variables))_. Read along to find instructions on how to do so correctly.
 
 ## Getting the Project Started
 
