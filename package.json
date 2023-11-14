@@ -8,8 +8,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "db:push": "drizzle-kit push:sqlite",
-    "db:studio": "drizzle-kit studio"
+    "db:push": "dotenv -e .env.local drizzle-kit push:sqlite",
+    "db:studio": "dotenv -e .env.local drizzle-kit studio"
   },
   "dependencies": {
     "@libsql/client": "^0.3.6",
@@ -27,6 +27,7 @@
     "@typescript-eslint/eslint-plugin": "^6.10.0",
     "@typescript-eslint/parser": "^6.10.0",
     "autoprefixer": "^10.0.1",
+    "dotenv-cli": "^7.3.0",
     "drizzle-kit": "^0.20.2",
     "eslint": "^8.53.0",
     "eslint-config-next": "14.0.2",

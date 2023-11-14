@@ -18,6 +18,7 @@ Additional packages/modules added to the starter-kit:
 - [prettier-plugin-tailwindcss]
 - [zod]
 - [@t3-oss/env-nextjs]
+- [dotenv-cli]
 
 Packages added which will require additional [configurations](#configuration):
 
@@ -41,6 +42,7 @@ Packages added which will require additional [configurations](#configuration):
 [@t3-oss/env-nextjs]: https://github.com/t3-oss/t3-env
 [drizzle]: https://orm.drizzle.team/
 [@libsql/client]: https://github.com/libsql/libsql-client-ts
+[dotenv-cli]: https://github.com/entropitor/dotenv-cli
 
 ## Using The Template
 
