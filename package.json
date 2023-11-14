@@ -1,5 +1,6 @@
 {
   "name": "next-starter",
+  "description": "a next.js starter-kit made by github.com/x-priyam",
   "version": "0.4.0",
   "private": true,
   "type": "module",

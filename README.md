@@ -56,7 +56,7 @@ From the command-line run:
 
 Use the `.env.local.starter` file to setup the local environment file. One way to do so would be to rename it to `.env.local` and change the values in it according to the project. You could also have multiple files like `.env.production.local` and `.env.development.local` according to your needs _([more details](https://nextjs.org/docs/app/building-your-application/configuring/environment-variables))_.
 
-When adding environment variables to any `.env` file, also make changes in `src/env.mjs`. This is a module to add type-safety to environment variables using [zod] and [@t3-oss/env-nextjs].
+**IMPORTANT:** When adding environment variables to any `.env` file, also make changes in `src/env.mjs`. This is a module to add type-safety to environment variables using [zod] and [@t3-oss/env-nextjs].
 
 #### Database and ORM
 
