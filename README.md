@@ -18,12 +18,14 @@ Additional packages/modules added to the starter-kit:
 - [prettier-plugin-tailwindcss]
 - [zod]
 - [@t3-oss/env-nextjs]
+- [dotenv-cli]
 
 Packages added which will require additional [configurations](#configuration):
 
 - [drizzle-orm][drizzle]
 - [drizzle-kit][drizzle]
 - [@libsql/client]
+- [next-auth@beta]
 
 <!-- Links for packages/modules -->
 
@@ -41,6 +43,8 @@ Packages added which will require additional [configurations](#configuration):
 [@t3-oss/env-nextjs]: https://github.com/t3-oss/t3-env
 [drizzle]: https://orm.drizzle.team/
 [@libsql/client]: https://github.com/libsql/libsql-client-ts
+[dotenv-cli]: https://github.com/entropitor/dotenv-cli
+[next-auth@beta]: https://github.com/nextauthjs/next-auth
 
 ## Using The Template
 
@@ -54,7 +58,7 @@ From the command-line run:
 
 Use the `.env.local.starter` file to setup the local environment file. One way to do so would be to rename it to `.env.local` and change the values in it according to the project. You could also have multiple files like `.env.production.local` and `.env.development.local` according to your needs _([more details](https://nextjs.org/docs/app/building-your-application/configuring/environment-variables))_.
 
-When adding environment variables to any `.env` file, also make changes in `src/env.mjs`. This is a module to add type-safety to environment variables using [zod] and [@t3-oss/env-nextjs].
+**IMPORTANT:** When adding environment variables to any `.env` file, also make changes in `src/env.mjs`. This is a module to add type-safety to environment variables using [zod] and [@t3-oss/env-nextjs].
 
 #### Database and ORM
 
@@ -84,6 +88,20 @@ If you end up creating any other environment variables, make sure to follow the 
 With most databases, you need to add a `DATABASE_URL` and some other environment variables as well.
 
 The starter kit includes a basic user schema in `src/db/schema/users.ts`. Change it according to your own needs.
+
+#### Authentication
+
+The starter kit uses the beta release of [NextAuth.js or Auth.js](https://authjs.dev/). Once v5 becomes the stable release, the starter-kit will also switch to the stable release.
+
+An example OAuth authentication pipeline is setup using GitHub by following the instructions at the [API Reference Docs](https://authjs.dev/reference/nextjs/module.index) and [Upgrade to v5 Guide](https://authjs.dev/guides/upgrade-to-v5). A custom Login page and a Logout button have been added (Check out `<domain>/login` and `<domain>/dashboard/home`).
+
+Again, adding environment variables is necessary. The format of environment variables for OAuth providers is `AUTH_<PROVIDER-NAME>_ID|SECRET`.
+
+A complete list of in-built providers and instructions on how to set them up can be found at the [Provider Docs](https://authjs.dev/getting-started/providers).
+
+The starter-kit uses `<domain>/api/auth/callback` as the OAuth callback URL (is required for OAuth provider setup).
+
+The starter-kit also has a `src/app/middleware.ts` setup to handle authorization for routes.
 
 ## Getting the Project Started
 
