@@ -6,13 +6,14 @@ import { DrizzleAdapter } from "@auth/drizzle-adapter";
 import { db } from "@/db";
 
 // Providers
-import GitHub from "next-auth/providers/GitHub";
+import Github from "next-auth/providers/github";
+// import Google from "next-auth/providers/google";
 
 // Temporary Fix
 // Since database calls in the SQLite Drizzle Adapter are not async
 // Why? No clue. :)
 import type { Adapter } from "@auth/core/adapters";
-import { accounts, users } from "@/db/schema/user";
+import { accounts, users } from "@/db/schema/users";
 import { and, eq } from "drizzle-orm";
 function getAdapter(): Adapter {
   return {
@@ -40,7 +41,8 @@ function getAdapter(): Adapter {
 
 export const authConfig = {
   // Add providers here
-  providers: [GitHub],
+  // providers: [Github, Google],
+  providers: [Github],
   adapter: getAdapter(),
   secret: env.AUTH_SECRET,
   pages: {

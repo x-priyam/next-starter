@@ -1,4 +1,7 @@
-export default function Page() {
+import { auth } from "@/auth";
+
+export default async function Page() {
+  const session = await auth();
   return (
     <>
       <div className="mx-auto w-2/5">
@@ -8,7 +11,7 @@ export default function Page() {
         </div>
 
         <div className="mt-32 text-right">
-          <p>From: Default</p>
+          <p>From: {session?.user?.name}</p>
         </div>
       </div>
     </>

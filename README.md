@@ -105,6 +105,10 @@ The starter-kit uses `<domain>/api/auth/callback` as the OAuth callback URL (is 
 
 The starter-kit also has a `src/app/middleware.ts` setup to handle authorization for routes.
 
+Once authenticated, the user data is saved on the database via the Drizzle Adapter for NextAuth.js. The schema for the database is added from the [recommended one](https://authjs.dev/reference/adapter/drizzle#sqlitehttps://authjs.dev/reference/adapter/drizzle#sqlite) in the docs.
+
+_Note: The SQLite adapter for Drizzle currently does not use async calls to the database. This leads to errors when the use is trying to login again. As of now, a custom function `getAdapter()` is being used to extend the adapter and make `getUserByAccount()` method of the adapter async. Once this fixed is merged in the official adapter, this will be changed in the starter-kit as well_
+
 ## Getting the Project Started
 
 First, run the development server:
