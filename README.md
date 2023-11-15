@@ -52,6 +52,8 @@ From the command-line run:
 
 `npx create-next-app --example https://github.com/x-priyam/next-starter`
 
+To use a specific release, go to the release page and download the compressed source code. Extract it and rename the folder to whatever you desire. Open the renamed folder (project root) in a terminal and run `npm i`
+
 ### Configuration
 
 #### Environment Variables
