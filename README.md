@@ -25,6 +25,7 @@ Packages added which will require additional [configurations](#configuration):
 - [drizzle-orm][drizzle]
 - [drizzle-kit][drizzle]
 - [@libsql/client]
+- [next-auth@beta]
 
 <!-- Links for packages/modules -->
 
@@ -43,6 +44,7 @@ Packages added which will require additional [configurations](#configuration):
 [drizzle]: https://orm.drizzle.team/
 [@libsql/client]: https://github.com/libsql/libsql-client-ts
 [dotenv-cli]: https://github.com/entropitor/dotenv-cli
+[next-auth@beta]: https://github.com/nextauthjs/next-auth
 
 ## Using The Template
 
@@ -86,6 +88,20 @@ If you end up creating any other environment variables, make sure to follow the 
 With most databases, you need to add a `DATABASE_URL` and some other environment variables as well.
 
 The starter kit includes a basic user schema in `src/db/schema/users.ts`. Change it according to your own needs.
+
+#### Authentication
+
+The starter kit uses the beta release of [NextAuth.js or Auth.js](https://authjs.dev/). Once v5 becomes the stable release, the starter-kit will also switch to the stable release.
+
+An example OAuth authentication pipeline is setup using GitHub by following the instructions at the [API Reference Docs](https://authjs.dev/reference/nextjs/module.index) and [Upgrade to v5 Guide](https://authjs.dev/guides/upgrade-to-v5). A custom Login page and a Logout button have been added (Check out `<domain>/login` and `<domain>/dashboard/home`).
+
+Again, adding environment variables is necessary. The format of environment variables for OAuth providers is `AUTH_<PROVIDER-NAME>_ID|SECRET`.
+
+A complete list of in-built providers and instructions on how to set them up can be found at the [Provider Docs](https://authjs.dev/getting-started/providers).
+
+The starter-kit uses `<domain>/api/auth/callback` as the OAuth callback URL (is required for OAuth provider setup).
+
+The starter-kit also has a `src/app/middleware.ts` setup to handle authorization for routes.
 
 ## Getting the Project Started
 

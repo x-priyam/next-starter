@@ -1,5 +1,5 @@
 /* eslint-disable @typescript-eslint/unbound-method */
-import { env } from "./env.mjs";
+import { env } from "@/env.mjs";
 import type { NextAuthConfig } from "next-auth";
 import NextAuth from "next-auth";
 

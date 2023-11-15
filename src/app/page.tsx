@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Home() {
   return (
     <main className="flex h-screen w-screen flex-col justify-center text-center align-middle">
@@ -5,6 +7,14 @@ export default function Home() {
         Next Starter Kit
       </h1>
       <span className="text-lg font-thin">Made by Priyam</span>
+      <div className="m-4 flex justify-center align-middle">
+        <Link
+          className="block rounded-lg bg-white p-4 text-black no-underline"
+          href="/login"
+        >
+          Try Now
+        </Link>
+      </div>
     </main>
   );
 }
