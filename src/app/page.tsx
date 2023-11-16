@@ -15,6 +15,16 @@ export default function Home() {
           Try Now
         </Link>
       </div>
+      <span>
+        Check out the source code @{" "}
+        <Link
+          href="https://github.com/x-priyam/next-starter"
+          target="_blank"
+          className="italic underline"
+        >
+          Github
+        </Link>
+      </span>
     </main>
   );
 }
