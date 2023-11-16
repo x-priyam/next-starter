@@ -9,8 +9,10 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint && prettier . --write",
-    "db:push": "dotenv -e .env.local drizzle-kit push:sqlite",
-    "db:studio": "dotenv -e .env.local drizzle-kit studio"
+    "dev-db:push": "dotenv -e .env.local drizzle-kit push:sqlite",
+    "dev-db:studio": "dotenv -e .env.local drizzle-kit studio",
+    "prod-db:push": "dotenv -e .env.production.local drizzle-kit push:sqlite",
+    "prod-db:studio": "dotenv -e .env.production.local drizzle-kit studio"
   },
   "dependencies": {
     "@auth/drizzle-adapter": "^0.3.6",
