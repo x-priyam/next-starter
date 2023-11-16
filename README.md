@@ -1,6 +1,10 @@
 # Next Starter
 
-This is a starter template to initialize a new [Next.js](https://nextjs.org/) project. It includes modules from [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) which include:
+This is a starter template to initialize a new [Next.js](https://nextjs.org/) project.
+
+To see the example starting configuration deployed, head to: [https://next-starter-x-priyam.vercel.app/](https://next-starter-x-priyam.vercel.app/)
+
+It includes modules from [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) which include:
 
 - [next]
 - [react]
