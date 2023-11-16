@@ -1,5 +1,6 @@
 import { signOut, auth } from "@/auth";
 import Image from "next/image";
+import Link from "next/link";
 import { redirect } from "next/navigation";
 
 export default async function Layout({
@@ -23,6 +24,18 @@ export default async function Layout({
           <span className="text-xl font-extrabold tracking-widest">
             Hi {userName}
           </span>
+          <Link
+            href="/dashboard/home"
+            className="mx-4 transition hover:text-slate-200"
+          >
+            Home
+          </Link>
+          <Link
+            href="/dashboard/providers"
+            className="mx-4 transition hover:text-slate-200"
+          >
+            Providers
+          </Link>
         </div>
         <div className="grid w-full grid-flow-col items-center justify-end">
           <Image

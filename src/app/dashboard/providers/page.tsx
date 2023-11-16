@@ -2,8 +2,8 @@ import LoginForm from "@/ui/login-form";
 
 export default function Page() {
   return (
-    <main className="mx-auto grid h-screen w-1/3 items-center justify-items-stretch">
+    <div className="mx-auto mt-32 w-2/5">
       <LoginForm />
-    </main>
+    </div>
   );
 }

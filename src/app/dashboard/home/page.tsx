@@ -1,7 +1,6 @@
-import { auth } from "@/auth";
+import Link from "next/link";
 
-export default async function Page() {
-  const session = await auth();
+export default function Page() {
   return (
     <>
       <div className="mx-auto w-2/5">
@@ -11,7 +10,16 @@ export default async function Page() {
         </div>
 
         <div className="mt-32 text-right">
-          <p>From: {session?.user?.name}</p>
+          <p>
+            From:{" "}
+            <Link
+              href="https://github.com/x-priyam"
+              target="_blank"
+              className="italic underline"
+            >
+              @x-priyam
+            </Link>
+          </p>
         </div>
       </div>
     </>

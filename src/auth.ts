@@ -7,7 +7,7 @@ import { db } from "@/db";
 
 // Providers
 import Github from "next-auth/providers/github";
-// import Google from "next-auth/providers/google";
+import Google from "next-auth/providers/google";
 
 // Temporary Fix
 // Since database calls in the SQLite Drizzle Adapter are not async
@@ -41,13 +41,12 @@ function getAdapter(): Adapter {
 
 export const authConfig = {
   // Add providers here
-  // providers: [Github, Google],
-  providers: [Github],
+  providers: [Github, Google],
   adapter: getAdapter(),
   secret: env.AUTH_SECRET,
-  pages: {
-    signIn: "/login",
-  },
+  // pages: {
+  //   signIn: "/login",
+  // },
   callbacks: {
     authorized({ auth, request: { nextUrl } }) {
       const isLoggedIn = !!auth?.user;
