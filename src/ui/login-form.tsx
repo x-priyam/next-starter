@@ -12,6 +12,7 @@ export default function LoginForm() {
             key={provider.name}
             formAction={async () => {
               "use server";
+              // @ts-expect-error: id exists on provider but TS thinks it doesn't for some reason
               await signIn(provider.id);
             }}
             className="my-2 w-full rounded-lg bg-white p-4 text-black"
