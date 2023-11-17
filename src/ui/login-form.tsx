@@ -2,8 +2,8 @@ import { authConfig, signIn } from "@/auth";
 
 export default function LoginForm() {
   return (
-    <div className="grid w-full justify-items-center rounded-lg bg-white bg-opacity-60 p-8">
-      <h1 className="mb-8 text-4xl font-extralight text-black">
+    <div className="mx-auto grid w-4/5 justify-items-center rounded-lg bg-white bg-opacity-60 p-8 md:w-1/3">
+      <h1 className="mb-8 text-center text-4xl font-extralight text-black">
         Choose your Provider
       </h1>
       <form className="w-4/5 p-4">
