@@ -44,9 +44,9 @@ export const authConfig = {
   providers: [Github, Google],
   adapter: getAdapter(),
   secret: env.AUTH_SECRET,
-  // pages: {
-  //   signIn: "/login",
-  // },
+  pages: {
+    signIn: "/login",
+  },
   callbacks: {
     authorized({ auth, request: { nextUrl } }) {
       const isLoggedIn = !!auth?.user;
